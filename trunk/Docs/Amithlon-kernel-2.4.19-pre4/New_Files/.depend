@@ -1,0 +1,74 @@
+init/do_mounts.o: init/do_mounts.c \
+   /usr/src/linux_boing_update_2419pre/include/linux/slab.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/devfs_fs_kernel.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/unistd.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/string.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/ctype.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/init.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/smp_lock.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/blk.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/tty.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/fd.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/nfs_fs.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/nfs_fs_sb.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/nfs_mount.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/uaccess.h \
+   $(wildcard /usr/src/linux_boing_update_2419pre/include/config/blk/dev/initrd.h) \
+   $(wildcard /usr/src/linux_boing_update_2419pre/include/config/arch/s390.h) \
+   $(wildcard /usr/src/linux_boing_update_2419pre/include/config/blk/cpq/da.h) \
+   $(wildcard /usr/src/linux_boing_update_2419pre/include/config/blk/cpq/da/module.h) \
+   $(wildcard /usr/src/linux_boing_update_2419pre/include/config/blk/cpq/ciss/da.h) \
+   $(wildcard /usr/src/linux_boing_update_2419pre/include/config/blk/cpq/ciss/da/module.h) \
+   $(wildcard /usr/src/linux_boing_update_2419pre/include/config/root/nfs.h) \
+   $(wildcard /usr/src/linux_boing_update_2419pre/include/config/blk/dev/fd.h) \
+   $(wildcard /usr/src/linux_boing_update_2419pre/include/config/blk/dev/ram.h)
+init/main.o: init/main.c \
+   /usr/src/linux_boing_update_2419pre/include/linux/proc_fs.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/devfs_fs_kernel.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/unistd.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/string.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/ctype.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/delay.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/utsname.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/ioport.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/init.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/smp_lock.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/blk.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/hdreg.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/iobuf.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/bootmem.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/tty.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/io.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/bugs.h \
+   $(wildcard /usr/src/linux_boing_update_2419pre/include/config/arch/s390.h) \
+   $(wildcard /usr/src/linux_boing_update_2419pre/include/config/pci.h) \
+   /usr/src/linux_boing_update_2419pre/include/linux/pci.h \
+   $(wildcard /usr/src/linux_boing_update_2419pre/include/config/dio.h) \
+   /usr/src/linux_boing_update_2419pre/include/linux/dio.h \
+   $(wildcard /usr/src/linux_boing_update_2419pre/include/config/zorro.h) \
+   /usr/src/linux_boing_update_2419pre/include/linux/zorro.h \
+   $(wildcard /usr/src/linux_boing_update_2419pre/include/config/mtrr.h) \
+   /usr/src/linux_boing_update_2419pre/include/asm/mtrr.h \
+   $(wildcard /usr/src/linux_boing_update_2419pre/include/config/nubus.h) \
+   /usr/src/linux_boing_update_2419pre/include/linux/nubus.h \
+   $(wildcard /usr/src/linux_boing_update_2419pre/include/config/isapnp.h) \
+   /usr/src/linux_boing_update_2419pre/include/linux/isapnp.h \
+   $(wildcard /usr/src/linux_boing_update_2419pre/include/config/irda.h) \
+   $(wildcard /usr/src/linux_boing_update_2419pre/include/config/x86/local/apic.h) \
+   /usr/src/linux_boing_update_2419pre/include/asm/smp.h \
+   $(wildcard /usr/src/linux_boing_update_2419pre/include/config/tc.h) \
+   $(wildcard /usr/src/linux_boing_update_2419pre/include/config/sysvipc.h) \
+   $(wildcard /usr/src/linux_boing_update_2419pre/include/config/smp.h) \
+   $(wildcard /usr/src/linux_boing_update_2419pre/include/config/modules.h) \
+   $(wildcard /usr/src/linux_boing_update_2419pre/include/config/blk/dev/initrd.h) \
+   $(wildcard /usr/src/linux_boing_update_2419pre/include/config/proc/fs.h) \
+   $(wildcard /usr/src/linux_boing_update_2419pre/include/config/sysctl.h) \
+   $(wildcard /usr/src/linux_boing_update_2419pre/include/config/sbus.h) \
+   $(wildcard /usr/src/linux_boing_update_2419pre/include/config/ppc.h) \
+   $(wildcard /usr/src/linux_boing_update_2419pre/include/config/mca.h) \
+   $(wildcard /usr/src/linux_boing_update_2419pre/include/config/arch/acorn.h) \
+   $(wildcard /usr/src/linux_boing_update_2419pre/include/config/pcmcia.h)
+init/version.o: init/version.c \
+   /usr/src/linux_boing_update_2419pre/include/linux/uts.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/utsname.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/version.h
