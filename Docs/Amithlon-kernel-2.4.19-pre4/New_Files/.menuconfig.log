@@ -1,0 +1,1 @@
+scripts/Menuconfig: drivers/mtd/Config.in: line -3697: syntax error: unexpected end of file

@@ -1,0 +1,708 @@
+acpitable.o: acpitable.c \
+   /usr/src/linux_boing_update_2419pre/include/linux/kernel.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/init.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/types.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/stddef.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/slab.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/pci.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/mpspec.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/io.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/apic.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/apicdef.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/page.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/pgtable.h \
+   acpitable.h
+apic.o: apic.c \
+   /usr/src/linux_boing_update_2419pre/include/linux/init.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/mm.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/irq.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/delay.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/bootmem.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/smp_lock.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/interrupt.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/mc146818rtc.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/kernel_stat.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/atomic.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/smp.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/mtrr.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/mpspec.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/pgalloc.h \
+   $(wildcard /usr/src/linux_boing_update_2419pre/include/config/pm.h) \
+   /usr/src/linux_boing_update_2419pre/include/linux/slab.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/pm.h \
+   $(wildcard /usr/src/linux_boing_update_2419pre/include/config/x86/io/apic.h) \
+   $(wildcard /usr/src/linux_boing_update_2419pre/include/config/smp.h)
+apm.o: apm.c \
+   /usr/src/linux_boing_update_2419pre/include/linux/module.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/poll.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/types.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/stddef.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/timer.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/fcntl.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/slab.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/stat.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/proc_fs.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/miscdevice.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/apm_bios.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/init.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/sched.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/pm.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/kernel.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/smp_lock.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/system.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/uaccess.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/desc.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/sysrq.h \
+   $(wildcard /usr/src/linux_boing_update_2419pre/include/config/apm/display/blank.h) \
+   $(wildcard /usr/src/linux_boing_update_2419pre/include/config/vt.h) \
+   /usr/src/linux_boing_update_2419pre/include/linux/timex.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/io.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/delay.h \
+   $(wildcard /usr/src/linux_boing_update_2419pre/include/config/apm/cpu/idle.h) \
+   $(wildcard /usr/src/linux_boing_update_2419pre/include/config/apm/rtc/is/gmt.h) \
+   $(wildcard /usr/src/linux_boing_update_2419pre/include/config/smp.h) \
+   $(wildcard /usr/src/linux_boing_update_2419pre/include/config/apm/real/mode/power/off.h) \
+   $(wildcard /usr/src/linux_boing_update_2419pre/include/config/apm/allow/ints.h) \
+   $(wildcard /usr/src/linux_boing_update_2419pre/include/config/apm/do/enable.h) \
+   $(wildcard /usr/src/linux_boing_update_2419pre/include/config/apm/ignore/user/suspend.h)
+bluesmoke.o: bluesmoke.c \
+   /usr/src/linux_boing_update_2419pre/include/linux/init.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/types.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/kernel.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/sched.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/processor.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/msr.h \
+   $(wildcard /usr/src/linux_boing_update_2419pre/include/config/x86/mce.h)
+cpuid.o: cpuid.c \
+   /usr/src/linux_boing_update_2419pre/include/linux/module.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/types.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/errno.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/fcntl.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/init.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/poll.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/smp.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/major.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/processor.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/msr.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/uaccess.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/system.h \
+   $(wildcard /usr/src/linux_boing_update_2419pre/include/config/smp.h)
+dmi_scan.o: dmi_scan.c \
+   /usr/src/linux_boing_update_2419pre/include/linux/types.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/kernel.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/string.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/init.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/apm_bios.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/slab.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/io.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/pm.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/keyboard.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/system.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/bootmem.h \
+   $(wildcard /usr/src/linux_boing_update_2419pre/include/config/simnow.h) \
+   $(wildcard /usr/src/linux_boing_update_2419pre/include/config/blk/dev/ide.h) \
+   $(wildcard /usr/src/linux_boing_update_2419pre/include/config/smp.h) \
+   $(wildcard /usr/src/linux_boing_update_2419pre/include/config/vt.h)
+entry.o: entry.S \
+   /usr/src/linux_boing_update_2419pre/include/linux/sys.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/linkage.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/segment.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/smp.h
+head.o: head.S \
+   /usr/src/linux_boing_update_2419pre/include/linux/threads.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/linkage.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/segment.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/page.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/pgtable.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/desc.h \
+   $(wildcard /usr/src/linux_boing_update_2419pre/include/config/smp.h)
+i386_ksyms.o: i386_ksyms.c \
+   /usr/src/linux_boing_update_2419pre/include/linux/module.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/smp.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/user.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/elfcore.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/mca.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/sched.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/in6.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/interrupt.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/smp_lock.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/pm.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/pci.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/apm_bios.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/kernel.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/string.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/tty.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/semaphore.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/processor.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/i387.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/uaccess.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/checksum.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/io.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/hardirq.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/delay.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/irq.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/mmx.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/desc.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/pgtable.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/pgalloc.h \
+   $(wildcard /usr/src/linux_boing_update_2419pre/include/config/apm.h) \
+   $(wildcard /usr/src/linux_boing_update_2419pre/include/config/apm/module.h) \
+   $(wildcard /usr/src/linux_boing_update_2419pre/include/config/smp.h) \
+   $(wildcard /usr/src/linux_boing_update_2419pre/include/config/blk/dev/ide.h) \
+   $(wildcard /usr/src/linux_boing_update_2419pre/include/config/blk/dev/hd.h) \
+   $(wildcard /usr/src/linux_boing_update_2419pre/include/config/blk/dev/ide/module.h) \
+   $(wildcard /usr/src/linux_boing_update_2419pre/include/config/blk/dev/hd/module.h) \
+   $(wildcard /usr/src/linux_boing_update_2419pre/include/config/eisa.h) \
+   $(wildcard /usr/src/linux_boing_update_2419pre/include/config/debug/iovirt.h) \
+   $(wildcard /usr/src/linux_boing_update_2419pre/include/config/pci.h) \
+   $(wildcard /usr/src/linux_boing_update_2419pre/include/config/pci/bios.h) \
+   $(wildcard /usr/src/linux_boing_update_2419pre/include/config/x86/use/3dnow.h) \
+   $(wildcard /usr/src/linux_boing_update_2419pre/include/config/x86/io/apic.h) \
+   $(wildcard /usr/src/linux_boing_update_2419pre/include/config/mca.h) \
+   $(wildcard /usr/src/linux_boing_update_2419pre/include/config/vt.h) \
+   $(wildcard /usr/src/linux_boing_update_2419pre/include/config/have/dec/lock.h) \
+   $(wildcard /usr/src/linux_boing_update_2419pre/include/config/debug/bugverbose.h)
+i387.o: i387.c \
+   /usr/src/linux_boing_update_2419pre/include/linux/sched.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/processor.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/i387.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/math_emu.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/sigcontext.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/user.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/ptrace.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/uaccess.h \
+   $(wildcard /usr/src/linux_boing_update_2419pre/include/config/math/emulation.h)
+i8259.o: i8259.c \
+   /usr/src/linux_boing_update_2419pre/include/linux/ptrace.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/errno.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/signal.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/sched.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/ioport.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/interrupt.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/timex.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/slab.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/random.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/smp_lock.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/init.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/kernel_stat.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/atomic.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/system.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/io.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/irq.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/bitops.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/pgtable.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/delay.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/desc.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/apic.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/irq.h \
+   $(wildcard /usr/src/linux_boing_update_2419pre/include/config/x86/io/apic.h) \
+   $(wildcard /usr/src/linux_boing_update_2419pre/include/config/smp.h) \
+   $(wildcard /usr/src/linux_boing_update_2419pre/include/config/x86/local/apic.h) \
+   $(wildcard /usr/src/linux_boing_update_2419pre/include/config/visws.h) \
+   $(wildcard /usr/src/linux_boing_update_2419pre/include/config/x86/visws/apic.h)
+init_task.o: init_task.c \
+   /usr/src/linux_boing_update_2419pre/include/linux/mm.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/sched.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/init.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/uaccess.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/pgtable.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/desc.h
+io_apic.o: io_apic.c \
+   /usr/src/linux_boing_update_2419pre/include/linux/mm.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/irq.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/interrupt.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/init.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/delay.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/sched.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/smp_lock.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/mc146818rtc.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/io.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/smp.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/desc.h
+ioport.o: ioport.c \
+   /usr/src/linux_boing_update_2419pre/include/linux/sched.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/kernel.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/errno.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/types.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/ioport.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/mm.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/smp.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/smp_lock.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/stddef.h
+irq.o: irq.c \
+   /usr/src/linux_boing_update_2419pre/include/linux/ptrace.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/errno.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/signal.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/sched.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/ioport.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/interrupt.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/timex.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/slab.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/random.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/smp_lock.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/init.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/kernel_stat.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/irq.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/proc_fs.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/atomic.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/io.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/smp.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/system.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/bitops.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/uaccess.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/pgalloc.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/delay.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/desc.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/irq.h \
+   $(wildcard /usr/src/linux_boing_update_2419pre/include/config/x86.h) \
+   $(wildcard /usr/src/linux_boing_update_2419pre/include/config/x86/local/apic.h) \
+   $(wildcard /usr/src/linux_boing_update_2419pre/include/config/x86/io/apic.h) \
+   $(wildcard /usr/src/linux_boing_update_2419pre/include/config/smp.h)
+ldt.o: ldt.c \
+   /usr/src/linux_boing_update_2419pre/include/linux/errno.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/sched.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/string.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/mm.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/smp.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/smp_lock.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/vmalloc.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/uaccess.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/system.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/ldt.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/desc.h
+mca.o: mca.c \
+   /usr/src/linux_boing_update_2419pre/include/linux/module.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/types.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/errno.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/kernel.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/mca.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/system.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/io.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/proc_fs.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/mman.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/mm.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/pagemap.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/ioport.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/uaccess.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/init.h \
+   $(wildcard /usr/src/linux_boing_update_2419pre/include/config/proc/fs.h)
+microcode.o: microcode.c \
+   /usr/src/linux_boing_update_2419pre/include/linux/init.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/sched.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/module.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/slab.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/vmalloc.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/miscdevice.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/devfs_fs_kernel.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/spinlock.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/msr.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/uaccess.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/processor.h
+mpparse.o: mpparse.c \
+   /usr/src/linux_boing_update_2419pre/include/linux/mm.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/irq.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/init.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/delay.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/bootmem.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/smp_lock.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/kernel_stat.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/mc146818rtc.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/smp.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/mtrr.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/mpspec.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/pgalloc.h \
+   $(wildcard /usr/src/linux_boing_update_2419pre/include/config/x86/visws/apic.h) \
+   $(wildcard /usr/src/linux_boing_update_2419pre/include/config/x86/io/apic.h) \
+   $(wildcard /usr/src/linux_boing_update_2419pre/include/config/x86/local/apic.h) \
+   $(wildcard /usr/src/linux_boing_update_2419pre/include/config/visws.h)
+msr.o: msr.c \
+   /usr/src/linux_boing_update_2419pre/include/linux/module.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/types.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/errno.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/fcntl.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/init.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/poll.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/smp.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/major.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/processor.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/msr.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/uaccess.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/system.h \
+   $(wildcard /usr/src/linux_boing_update_2419pre/include/config/smp.h)
+mtrr.o: mtrr.c \
+   /usr/src/linux_boing_update_2419pre/include/linux/types.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/errno.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/sched.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/tty.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/timer.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/kernel.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/wait.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/string.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/slab.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/ioport.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/delay.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/fs.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/ctype.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/proc_fs.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/devfs_fs_kernel.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/mm.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/module.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/pci.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/mtrr.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/init.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/smp.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/smp_lock.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/uaccess.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/io.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/processor.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/system.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/pgtable.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/segment.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/bitops.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/atomic.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/msr.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/hardirq.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/irq.h \
+   $(wildcard /usr/src/linux_boing_update_2419pre/include/config/smp.h) \
+   $(wildcard /usr/src/linux_boing_update_2419pre/include/config/proc/fs.h) \
+   $(wildcard /usr/src/linux_boing_update_2419pre/include/config/devfs/fs.h)
+nmi.o: nmi.c \
+   /usr/src/linux_boing_update_2419pre/include/linux/mm.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/irq.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/delay.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/bootmem.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/smp_lock.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/interrupt.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/mc146818rtc.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/kernel_stat.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/smp.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/mtrr.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/mpspec.h \
+   $(wildcard /usr/src/linux_boing_update_2419pre/include/config/pm.h) \
+   /usr/src/linux_boing_update_2419pre/include/linux/pm.h
+pci-dma.o: pci-dma.c \
+   /usr/src/linux_boing_update_2419pre/include/linux/types.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/mm.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/string.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/pci.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/io.h
+pci-i386.o: pci-i386.c \
+   /usr/src/linux_boing_update_2419pre/include/linux/types.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/kernel.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/pci.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/init.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/ioport.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/errno.h \
+   pci-i386.h
+pci-irq.o: pci-irq.c \
+   /usr/src/linux_boing_update_2419pre/include/linux/types.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/kernel.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/pci.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/init.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/slab.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/interrupt.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/irq.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/io.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/smp.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/io_apic.h \
+   pci-i386.h \
+   $(wildcard /usr/src/linux_boing_update_2419pre/include/config/pci/bios.h) \
+   $(wildcard /usr/src/linux_boing_update_2419pre/include/config/x86/io/apic.h)
+pci-pc.o: pci-pc.c \
+   /usr/src/linux_boing_update_2419pre/include/linux/types.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/kernel.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/sched.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/pci.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/init.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/ioport.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/segment.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/io.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/smp.h \
+   pci-i386.h \
+   $(wildcard /usr/src/linux_boing_update_2419pre/include/config/multiquad.h) \
+   $(wildcard /usr/src/linux_boing_update_2419pre/include/config/pci/direct.h) \
+   $(wildcard /usr/src/linux_boing_update_2419pre/include/config/pci/bios.h)
+pci-visws.o: pci-visws.c \
+   /usr/src/linux_boing_update_2419pre/include/linux/types.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/kernel.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/sched.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/pci.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/init.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/irq.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/smp.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/lithium.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/io.h \
+   pci-i386.h \
+   $(wildcard /usr/src/linux_boing_update_2419pre/include/config/cmd.h)
+process.o: process.c \
+   /usr/src/linux_boing_update_2419pre/include/linux/errno.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/sched.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/kernel.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/mm.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/smp.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/smp_lock.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/stddef.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/unistd.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/ptrace.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/slab.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/vmalloc.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/user.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/a.out.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/interrupt.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/delay.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/reboot.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/init.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/mc146818rtc.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/uaccess.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/pgtable.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/system.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/io.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/ldt.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/processor.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/i387.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/irq.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/desc.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/mmu_context.h \
+   $(wildcard /usr/src/linux_boing_update_2419pre/include/config/math/emulation.h) \
+   /usr/src/linux_boing_update_2419pre/include/asm/math_emu.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/irq.h \
+   $(wildcard /usr/src/linux_boing_update_2419pre/include/config/smp.h)
+ptrace.o: ptrace.c \
+   /usr/src/linux_boing_update_2419pre/include/linux/kernel.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/sched.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/mm.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/smp.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/smp_lock.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/errno.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/ptrace.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/user.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/uaccess.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/pgtable.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/system.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/processor.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/i387.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/debugreg.h
+semaphore.o: semaphore.c \
+   /usr/src/linux_boing_update_2419pre/include/linux/sched.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/semaphore.h \
+   $(wildcard /usr/src/linux_boing_update_2419pre/include/config/smp.h)
+setup.o: setup.c \
+   /usr/src/linux_boing_update_2419pre/include/linux/errno.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/sched.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/kernel.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/mm.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/stddef.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/unistd.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/ptrace.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/slab.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/user.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/a.out.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/tty.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/ioport.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/delay.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/init.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/apm_bios.h \
+   $(wildcard /usr/src/linux_boing_update_2419pre/include/config/blk/dev/ram.h) \
+   /usr/src/linux_boing_update_2419pre/include/linux/blk.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/highmem.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/bootmem.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/pci.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/pci_ids.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/seq_file.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/processor.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/console.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/mtrr.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/uaccess.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/system.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/io.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/smp.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/cobalt.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/msr.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/desc.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/e820.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/dma.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/mpspec.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/mmu_context.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/uae.h \
+   $(wildcard /usr/src/linux_boing_update_2419pre/include/config/eisa.h) \
+   $(wildcard /usr/src/linux_boing_update_2419pre/include/config/visws.h) \
+   $(wildcard /usr/src/linux_boing_update_2419pre/include/config/highmem.h) \
+   $(wildcard /usr/src/linux_boing_update_2419pre/include/config/x86/pae.h) \
+   $(wildcard /usr/src/linux_boing_update_2419pre/include/config/smp.h) \
+   $(wildcard /usr/src/linux_boing_update_2419pre/include/config/x86/local/apic.h) \
+   $(wildcard /usr/src/linux_boing_update_2419pre/include/config/blk/dev/initrd.h) \
+   $(wildcard /usr/src/linux_boing_update_2419pre/include/config/vt.h) \
+   $(wildcard /usr/src/linux_boing_update_2419pre/include/config/vga/console.h) \
+   $(wildcard /usr/src/linux_boing_update_2419pre/include/config/dummy/console.h) \
+   $(wildcard /usr/src/linux_boing_update_2419pre/include/config/x86/tsc.h) \
+   $(wildcard /usr/src/linux_boing_update_2419pre/include/config/pci.h) \
+   $(wildcard /usr/src/linux_boing_update_2419pre/include/config/x86/oostore.h) \
+   $(wildcard /usr/src/linux_boing_update_2419pre/include/config/m686.h)
+signal.o: signal.c \
+   /usr/src/linux_boing_update_2419pre/include/linux/sched.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/mm.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/smp.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/smp_lock.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/kernel.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/signal.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/errno.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/wait.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/ptrace.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/unistd.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/stddef.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/tty.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/personality.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/ucontext.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/uaccess.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/i387.h
+smpboot.o: smpboot.c \
+   /usr/src/linux_boing_update_2419pre/include/linux/init.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/mm.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/kernel_stat.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/smp_lock.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/irq.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/bootmem.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/delay.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/mc146818rtc.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/mtrr.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/pgalloc.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/smpboot.h \
+   $(wildcard /usr/src/linux_boing_update_2419pre/include/config/mtrr.h) \
+   $(wildcard /usr/src/linux_boing_update_2419pre/include/config/visws.h)
+smp.o: smp.c \
+   /usr/src/linux_boing_update_2419pre/include/linux/init.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/mm.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/irq.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/delay.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/spinlock.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/smp_lock.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/kernel_stat.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/mc146818rtc.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/cache.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/mtrr.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/pgalloc.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/smpboot.h
+sys_i386.o: sys_i386.c \
+   /usr/src/linux_boing_update_2419pre/include/linux/errno.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/sched.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/mm.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/smp.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/smp_lock.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/sem.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/msg.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/shm.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/stat.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/mman.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/file.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/utsname.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/uaccess.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/ipc.h
+time.o: time.c \
+   /usr/src/linux_boing_update_2419pre/include/linux/errno.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/sched.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/kernel.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/param.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/string.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/mm.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/interrupt.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/time.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/delay.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/init.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/smp.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/io.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/smp.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/irq.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/msr.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/delay.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/mpspec.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/uaccess.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/processor.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/mc146818rtc.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/timex.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/fixmap.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/cobalt.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/irq.h \
+   $(wildcard /usr/src/linux_boing_update_2419pre/include/config/x86/tsc.h) \
+   $(wildcard /usr/src/linux_boing_update_2419pre/include/config/x86/io/apic.h) \
+   $(wildcard /usr/src/linux_boing_update_2419pre/include/config/visws.h) \
+   $(wildcard /usr/src/linux_boing_update_2419pre/include/config/x86/local/apic.h) \
+   $(wildcard /usr/src/linux_boing_update_2419pre/include/config/mca.h)
+trampoline.o: trampoline.S \
+   /usr/src/linux_boing_update_2419pre/include/linux/linkage.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/segment.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/page.h \
+   $(wildcard /usr/src/linux_boing_update_2419pre/include/config/multiquad.h)
+traps.o: traps.c \
+   /usr/src/linux_boing_update_2419pre/include/linux/sched.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/kernel.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/string.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/errno.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/ptrace.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/timer.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/mm.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/init.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/delay.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/spinlock.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/interrupt.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/highmem.h \
+   $(wildcard /usr/src/linux_boing_update_2419pre/include/config/mca.h) \
+   /usr/src/linux_boing_update_2419pre/include/linux/mca.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/processor.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/system.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/uaccess.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/io.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/atomic.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/debugreg.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/desc.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/i387.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/smp.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/pgalloc.h \
+   $(wildcard /usr/src/linux_boing_update_2419pre/include/config/x86/visws/apic.h) \
+   /usr/src/linux_boing_update_2419pre/include/asm/fixmap.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/cobalt.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/lithium.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/irq.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/module.h \
+   $(wildcard /usr/src/linux_boing_update_2419pre/include/config/modules.h) \
+   $(wildcard /usr/src/linux_boing_update_2419pre/include/config/x86/local/apic.h) \
+   $(wildcard /usr/src/linux_boing_update_2419pre/include/config/math/emulation.h) \
+   $(wildcard /usr/src/linux_boing_update_2419pre/include/config/m686.h) \
+   $(wildcard /usr/src/linux_boing_update_2419pre/include/config/eisa.h)
+visws_apic.o: visws_apic.c \
+   /usr/src/linux_boing_update_2419pre/include/linux/ptrace.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/errno.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/kernel_stat.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/signal.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/sched.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/ioport.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/interrupt.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/timex.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/slab.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/random.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/smp.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/smp_lock.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/init.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/system.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/io.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/irq.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/bitops.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/smp.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/pgtable.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/delay.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/desc.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/cobalt.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/irq.h
+vm86.o: vm86.c \
+   /usr/src/linux_boing_update_2419pre/include/linux/errno.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/sched.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/kernel.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/signal.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/string.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/ptrace.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/mm.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/smp.h \
+   /usr/src/linux_boing_update_2419pre/include/linux/smp_lock.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/uaccess.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/pgalloc.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/io.h \
+   /usr/src/linux_boing_update_2419pre/include/asm/irq.h
